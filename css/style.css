@@ -1,0 +1,885 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar-container {
+  width: 100%;
+
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0px -3px 13px #4352dd;
+}
+
+.navbar {
+  background-color: #fff;
+  width: 75%;
+  margin: auto;
+  padding: 25px 0;
+}
+.nav-burger{
+        float: right;
+    font-size: 25px;
+    display: none;
+}
+.logo {
+  float: left;
+  padding-top: 15px;
+}
+.logo img {
+  width: 100%;
+}
+
+.nav-links {
+  float: left;
+  margin-left: 200px;
+  padding-top: 15px;
+}
+.nav-links ul {
+  list-style: none;
+}
+.nav-links ul li {
+  float: left;
+  margin-right: 40px;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s all;
+  font-weight: 300;
+}
+.nav-links ul li .active {
+  color: #007bff;
+}
+.nav-links ul li:hover a {
+  color: #007bff;
+}
+.buy {
+  float: right;
+}
+.clr {
+  clear: both;
+}
+
+.buy .nav-icons {
+  float: left;
+  margin-right: 40px;
+  padding-top: 15px;
+}
+.buy .nav-icons .fa-magnifying-glass {
+  margin-right: 15px;
+}
+.buy .nav-icons .chart {
+  position: relative;
+}
+.buy .nav-icons .chart::after {
+  position: absolute;
+  content: "3";
+  top: -13px;
+  right: -12px;
+  width: 8px;
+  height: fit-content;
+  background-color: #384aeb;
+  color: #fff;
+  border: 1px solid #007bff;
+  border-radius: 50%;
+  font-size: 8px;
+  text-align: center;
+  padding: 3px;
+}
+.buy .nav-btn {
+  float: right;
+}
+.buy .nav-btn button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid #f0f0f0;
+  border-radius: 25px;
+  padding: 14px 40px;
+  font-size: 15px;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.buy .nav-btn:hover button {
+  border: 1px solid #384aeb;
+}
+
+/* landing  */
+
+.landing {
+  width: 100%;
+  background-color: #f1f6f7;
+  position: relative;
+}
+.landing::before {
+  position: absolute;
+  content: "";
+  background-color: #384aeb;
+  width: 35%;
+  height: 100%;
+}
+
+.landing .landing-container {
+  width: 75%;
+  margin: auto;
+  margin-top: 50px;
+}
+.landing .landing-container .leftside-landing {
+  float: left;
+  width: 45%;
+  position: relative;
+  margin-top: 90px;
+  top: 6px;
+}
+.landing .landing-container .leftside-landing img {
+  width: 90%;
+}
+.landing .landing-container .rightside-landing {
+  float: right;
+  width: 45%;
+  margin-top: 210px;
+}
+.landing .landing-container .rightside-landing p {
+  color: #665f5f;
+  font-size: 24px;
+}
+.landing .landing-container .rightside-landing .landing-last-p {
+  color: #665f5f;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+.landing .landing-container .rightside-landing h1 {
+  margin: 15px 0px;
+  line-height: 1.2;
+  font-size: 50px;
+  color: #342f2f;
+}
+.landing .landing-container .rightside-landing a {
+  border: 1px solid #384aeb;
+  border-radius: 25px;
+  padding: 14px 40px;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #384aeb;
+  color: #fff;
+  transition: 0.5s all;
+}
+.landing .landing-container .rightside-landing a:hover {
+  background-color: #fff;
+  color: black;
+  border: 1px solid #384aeb;
+}
+
+/* sec1 */
+
+.sec1-container {
+  width: 100%;
+  background-color: #fff;
+}
+.sec1-cards {
+  margin-top: 20px;
+}
+.sec1-card {
+  width: 33.3%;
+  float: left;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.sec1-card .inner {
+  width: 100%;
+  position: relative;
+}
+.sec1-card .inner img {
+  width: 100%;
+}
+.sec1-card .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 200px;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0.7s all;
+}
+.overlay-content {
+  background-color: #384aeb;
+  color: #fff;
+  padding: 25px;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 60%;
+  /* right: 0; */
+}
+.overlay-content p {
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+.sec1-card .inner:hover .overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 0;
+}
+
+/* sec2 */
+
+.sec2 {
+  width: 100%;
+  margin-top: 150px;
+}
+.sec2-container {
+  width: 75%;
+  margin: auto;
+}
+.sec-title {
+  margin-bottom: 60px;
+}
+.sec-title p {
+  color: #777;
+  font-size: 16px;
+}
+.sec-title h2 {
+  font-size: 30px;
+  font-weight: 900;
+  margin: 15px 0;
+}
+.sec-title h2 span {
+  border-bottom: 3px solid #384aeb;
+  padding-bottom: 8px;
+}
+.sec2-card {
+  float: left;
+  width: 25%;
+  padding-right: 20px;
+  margin-bottom: 50px;
+}
+.sec2-card-inner {
+  width: 100%;
+}
+
+.sec2-card-inner .sec2-card-img {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.overlay-sec2-card {
+  position: absolute;
+  content: "";
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  transition: 0.5s all;
+}
+.sec2-card:hover .overlay-sec2-card {
+  background-color: rgba(255, 255, 255, 0.545);
+  bottom: 0;
+}
+.sec2-card:hover i {
+  opacity: 0.5;
+}
+.sec2-card:hover h3 {
+  color: #384aeb;
+}
+
+.overlay-sec2-card i {
+  margin-top: 21px;
+  border: 1px solid #384aeb;
+  background-color: #384aeb;
+  color: #fff;
+  padding: 10px;
+  margin-right: 5px;
+  opacity: 0;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.overlay-sec2-card i:hover {
+  opacity: 1;
+}
+.sec2-card-inner .sec2-card-img img {
+  width: 100%;
+}
+.sec2-card-content {
+  text-align: center;
+  padding: 15px 0;
+}
+.sec2-card-content p {
+  color: #777;
+}
+.sec2-card-content h3 {
+  margin: 10px 0;
+  transition: 0.3s all;
+  color: #504444;
+  letter-spacing: 1.2px;
+}
+/* sec3 */
+
+.sec3 {
+  background-image: url("../imgs/parallax-bg.png");
+  background-size: cover;
+  padding: 50px;
+  margin: 100px 0;
+}
+
+.sec3-content {
+  padding: 55px;
+  text-align: center;
+  width: 50%;
+}
+.sec3-content h2 {
+  font-size: 55px;
+  font-weight: 400;
+}
+.sec3-content h3 {
+  font-size: 25px;
+  margin: 20px 0;
+  font-weight: 400;
+}
+.sec3-content p {
+  margin-bottom: 50px;
+  color: #777;
+}
+.sec3-content a {
+  border: 1px solid #384aeb;
+  border-radius: 25px;
+  padding: 14px 40px;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #384aeb;
+  color: #fff;
+  transition: 0.5s all;
+}
+.sec3-content a:hover {
+  background-color: transparent;
+  color: black;
+  border: 1px solid #384aeb;
+}
+
+/* sec4 */
+.sec4 {
+  width: 100%;
+}
+.sec4-container {
+  width: 75%;
+  margin: auto;
+}
+
+/* sec5 */
+
+.sec5 {
+  width: 100%;
+}
+.sec5-container {
+  width: 75%;
+  margin: auto;
+}
+
+.sec5-card {
+  padding-right: 20px;
+  width: 33.3%;
+  float: left;
+}
+.sec5-card-inner {
+  width: 100%;
+}
+.sec5-card-inner img {
+  width: 100%;
+}
+.sec5-card-comments {
+  margin-top: 20px;
+}
+.sec5-card-comments a {
+  color: #777;
+  text-decoration: none;
+  margin-right: 25px;
+}
+.sec5-card-comments a i {
+  margin-right: 8px;
+}
+.sec5-card-inner h3 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin: 20px 0;
+  transition: 0.4s all;
+}
+.sec5-card-inner p {
+  color: #777;
+  font-size: 15px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+.sec5-card-inner .read-card-btn {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  transition: 0.4s all;
+}
+.sec5-card-inner .read-card-btn i {
+  margin-left: 8px;
+  transition: 0.4s all;
+}
+
+.sec5-card:hover h3 {
+  color: #384aeb;
+}
+.sec5-card:hover .read-card-btn {
+  color: #384aeb;
+}
+.sec5-card:hover .arrow-move {
+  margin-left: 15px;
+  color: #384aeb;
+}
+
+/* section subscribe */
+
+.sec-of-describe {
+  width: 100%;
+  position: relative;
+  top: 100px;
+}
+.describe-container {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+  background-color: #fff;
+  margin-top: 100px;
+  box-shadow: 0px -5px 20px 0px rgba(56, 74, 235, 0.1);
+}
+.describe-container h2 {
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+.describe-container p {
+  margin: 20px 0;
+  color: #777;
+}
+.describe-container input {
+  border: none;
+  outline: none;
+  border: 1px solid #efebeb;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 25px;
+  width: 50%;
+}
+
+.describe-container button {
+  border: 1px solid #384aeb;
+  border-radius: 25px;
+  padding: 14px 40px;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #384aeb;
+  color: #fff;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+.describe-container button:hover {
+  background-color: transparent;
+  color: black;
+  border: 1px solid #384aeb;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  background-color: #002347;
+  padding: 300px 0 15px 0;
+}
+.footer-container {
+  width: 75%;
+  margin: auto;
+}
+.common {
+  width: 25%;
+  float: left;
+  color: #fff;
+}
+.common h2 {
+  font-size: 31px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.common p {
+  color: #9b9898;
+  line-height: 1.5;
+}
+.common .mission-last-text {
+  margin-top: 25px;
+}
+.links ul {
+  list-style: none;
+}
+.links ul li {
+  margin-bottom: 15px;
+}
+.links ul li a {
+  color: #9b9898;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+.links ul li a:hover {
+  color: #007bff;
+}
+.gallery .pics {
+  width: 55%;
+}
+.gallery .pics img {
+  width: 45%;
+}
+.contact .row {
+  margin-bottom: 20px;
+}
+.contact .row i {
+  float: left;
+  color: #007bff;
+
+  margin-right: 10px;
+  font-size: 22px;
+}
+.contact .row .content-text {
+  float: left;
+}
+.contact .row h4 {
+  font-weight: 300;
+  font-size: 16px;
+}
+.contact .row p {
+  font-size: 14px;
+}
+.links h2 {
+  font-size: 17px;
+}
+.gallery h2 {
+  font-size: 17px;
+}
+.contact h2 {
+  font-size: 17px;
+}
+.links {
+  width: 20%;
+  margin-left: 50px;
+}
+
+/* last footer */
+.last-footer {
+  width: 100%;
+  background-color: #05274b;
+  text-align: center;
+  padding: 30px 0;
+  color: #fff;
+}
+.last-footer p span {
+  color: #007bff;
+}
+
+
+/* media  */
+@media screen and (max-width:1350px) {
+
+    .buy .nav-btn button {
+    
+    padding: 14px 23px;
+ 
+}
+.buy .nav-icons .fa-magnifying-glass {
+    margin-right: 5px;
+}
+.buy .nav-icons {
+
+    margin-right: 20px;
+
+}
+.nav-links ul li {
+
+    margin-right: 25px;
+}
+.nav-links {
+    float: left;
+    margin-left: 98px;
+    padding-top: 15px;
+}
+.landing .landing-container .rightside-landing {
+    float: right;
+    width: 45%;
+    margin-top: 118px;
+}
+.common {
+    width: 33.3%;
+    float: left;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.links {
+ 
+    margin-left: 0;
+}
+}
+@media  screen and (max-width: 991px){
+
+.nav-links {
+   display: none;
+}
+.buy {
+
+    display: none;
+}
+
+.nav-burger{
+        float: right;
+    font-size: 25px;
+    display: block;
+}
+
+.landing .landing-container .leftside-landing {
+
+    width: 40%;
+    margin-top: 90px;
+    top: 6px;
+}
+.landing .landing-container .rightside-landing h1 {
+    margin: 10px 0px;
+   
+    font-size: 31px;
+   
+}
+.landing .landing-container .rightside-landing .landing-last-p {
+   
+    font-size: 14px;
+ 
+    margin-bottom: 35px;
+}
+.landing .landing-container .rightside-landing {
+    float: right;
+    width: 45%;
+    margin-top: 140px;
+}
+.common {
+    width: 100%;
+    float: none;
+    margin-bottom: 50px;
+}
+.links {
+    margin-left: 0;
+
+}
+.gallery .pics {
+    width: 30%;
+}
+
+}
+
+@media screen and (max-width:871px) {
+    .sec2 {
+    width: 100%;
+    margin-top: 80px;
+}
+.sec2-card {
+
+    width: 50%;
+
+}
+.sec3-content {
+    padding: 0;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.sec3-content h2 {
+    font-size: 44px;
+    font-weight: 400;
+}
+.sec5-card {
+    padding-right: 20px;
+    width: 50%;
+    float: left;
+    margin-bottom: 25px;
+}
+.common{
+    float: none;
+    width: 100%;
+}
+.gallery .pics {
+    width: 30%;
+}
+.landing .landing-container .rightside-landing {
+    float: right;
+    width: 50%;
+    margin-top: 109px;
+}
+.landing .landing-container .rightside-landing h1 {
+    margin: 10px 0px;
+    font-size: 28px;
+}
+}
+
+@media screen and (max-width:767px) {
+.landing .landing-container .rightside-landing {
+    width: 50%;
+    margin-top: 90px;
+}
+.landing .landing-container .rightside-landing p {
+   
+    font-size: 19px;
+}
+.landing .landing-container .rightside-landing h1 {
+    margin: 10px 0px;
+    font-size: 22px;
+}
+.landing .landing-container .rightside-landing a {
+    border: 1px solid #384aeb;
+    border-radius: 25px;
+    padding: 6px 20px;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #384aeb;
+    color: #fff;
+    transition: 0.5s all;
+}
+.landing .landing-container .rightside-landing .landing-last-p {
+    font-size: 14px;
+    margin-bottom: 33px;
+}
+.sec1-card {
+    width: 50%;
+    float: left;
+    padding: 0 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.sec2 {
+    width: 100%;
+    margin-top: 100px;
+}
+.sec-title {
+    margin-bottom: 50px;
+}
+.sec2-card {
+
+    width: 50%;
+
+}
+.sec3-content a {
+
+    padding: 8px 20px;
+   
+}
+.sec3-content p {
+    margin-bottom: 40px;
+
+}
+.sec3-content h3 {
+    font-size: 21px;
+    margin: 14px 0;
+    font-weight: 400;
+}
+.sec3-content h2 {
+    font-size: 42px;
+    font-weight: 400;
+}
+.sec3-content {
+    padding: 0px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.sec5-card {
+    padding-right: 20px;
+    width: 50%;
+    float: left;
+    margin-bottom: 20px;
+}
+.describe-container button {
+  
+    padding: 14px 14px;
+    
+}
+.describe-container p {
+    margin: 20px 0;
+
+}
+.describe-container h2 {
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+.footer {
+
+    padding: 200px 0 15px 0;
+}
+.contact{
+    float: right;
+}
+.common {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.gallery .pics {
+    width: 30%;
+}
+}
+
+
+@media screen and (max-width:550px) {
+    .landing .landing-container .rightside-landing a {
+    border: 1px solid #384aeb;
+    border-radius: 25px;
+    padding: 7px 28px;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #384aeb;
+    color: #fff;
+    transition: 0.5s all;
+}
+.landing .landing-container .rightside-landing .landing-last-p {
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+.landing .landing-container .rightside-landing h1 {
+    margin: 10px 0px;
+    font-size: 24px;
+}
+.landing .landing-container .rightside-landing p {
+    font-size: 18px;
+}
+.sec1-card {
+    width: 100%;
+}
+.sec2 {
+    width: 100%;
+    margin-top: 60px;
+}
+.sec2-card {
+    width: 100%;
+}
+.sec5-card {
+
+    width: 100%;
+
+}
+.landing .landing-container .leftside-landing {
+
+    display: none;
+}
+.landing .landing-container .rightside-landing {
+    width: 100%;
+    margin-top: 75px;
+    position: relative;
+    text-align: center;
+}
+}
